@@ -1,22 +1,23 @@
 This package converts Kindle's "My Clippings.txt" to a format
-useable in Org mode. The result will be sorted by book title and
+usable in Org mode. The result will be sorted by book title and
 displayed in a temporary buffer named "*clippings*".
 
-* Install:
+Only tested with Amazon Kindle 4.
+
+* Install
 
 Put this file in your Emacs-Lisp load path, and add the following
 into your $HOME/.emacs startup file.
 
-    (require 'clip2org)
-    (setq clip2org-clippings-file "/path/to/My Clippings.txt")
+: (require 'clip2org)
+: (setq clip2org-clippings-file "/path/to/My Clippings.txt")
 
 You can also use the customize interface to see all the options:
 
-    M-x customize-group <ENTER> clip2org
+: M-x customize-group <ENTER> clip2org
 
-* Usage:
+* Usage
 
-After setting clip2org-clippings-file, do:
+After setting =clip2org-clippings-file=, do:
 
-    M-x clip2org
-
+: M-x clip2org
