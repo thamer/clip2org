@@ -2,8 +2,8 @@
 
 ;; Author: Thamer Mahmoud <thamer.mahmoud@gmail.com>
 ;; Version: 1.0
-;; Time-stamp: <2012-05-06 16:33:55 thamer>
-;; URL:
+;; Time-stamp: <2012-05-14 11:15:27 thamer>
+;; URL: https://github.com/thamer/clip2org
 ;; Keywords: Kindle, Org mode, Amazon, My Clippings.txt
 ;; Compatibility: Tested on GNU Emacs 23.4 and 24.1
 ;; Copyright (C) 2012 Thamer Mahmoud, all rights reserved.
@@ -180,7 +180,7 @@ to the list"
     (goto-char (point-min))
     (let (clist (booklist (clip2org-get-next-book-as-list)))
       (while booklist
-	(setq clist (clip2org-append-to-alist-key 
+	(setq clist (clip2org-append-to-alist-key
 		     (car booklist) (cdr booklist) clist))
 	(setq booklist (clip2org-get-next-book-as-list)))
       (clip2org-convert-to-org clist))))
