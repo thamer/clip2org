@@ -1,8 +1,8 @@
 ;;; clip2org.el --- Convert Kindle's My Clippings.txt into Org
 
 ;; Author: Thamer Mahmoud <thamer.mahmoud@gmail.com>
-;; Version: 1.0
-;; Time-stamp: <2012-05-14 11:15:27 thamer>
+;; Version: 1.1
+;; Time-stamp: <2012-05-28 10:53:45 thamer>
 ;; URL: https://github.com/thamer/clip2org
 ;; Keywords: Kindle, Org mode, Amazon, My Clippings.txt
 ;; Compatibility: Tested on GNU Emacs 23.4 and 24.1
@@ -100,7 +100,7 @@ clip2org-include-pdf-folder."
         (setq date (match-string 1)))
       ;; From the end of date to ==========
       (if (re-search-forward
-           "\n\\([[:alpha:][:ascii:]§…—“”‘’–]*\\)\n==========" end t 1)
+           "\n\\(.*?\\)\n==========" end t 1)
           (setq content (match-string 1)))
       (when (equal title "==========")
         (error "Clip2org: failed in getting content or quoted text."))
