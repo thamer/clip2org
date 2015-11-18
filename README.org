@@ -6,7 +6,7 @@ Only tested with Amazon Kindle 4.
 
 * Install
 
-Put this file in your Emacs-Lisp load path, and add the following
+Put =clip2org.el= in your Emacs-Lisp load path, and add the following
 into your $HOME/.emacs startup file.
 
 : (require 'clip2org)
