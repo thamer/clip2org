@@ -1,12 +1,12 @@
 ;;; clip2org.el --- Convert Kindle's My Clippings.txt into Org
 
 ;; Author: Thamer Mahmoud <thamer.mahmoud@gmail.com>
-;; Version: 1.1
-;; Time-stamp: <2012-05-28 10:53:45 thamer>
+;; Version: 1.2
+;; Time-stamp: <2017-07-03 01:01:35 thamer>
 ;; URL: https://github.com/thamer/clip2org
 ;; Keywords: outlines
 ;; Compatibility: Tested on GNU Emacs 23.4 and 24.1
-;; Copyright (C) 2012 Thamer Mahmoud, all rights reserved.
+;; Copyright (C) 2012-7 Thamer Mahmoud, all rights reserved.
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -27,9 +27,7 @@
 
 ;;; Commentary:
 ;;
-;; (Kindle, Org mode, Amazon, My Clippings.txt)
-;;
-;; This package converts Kindle's "My Clippings.txt" to a format
+;; This package converts Amazon Kindle's "My Clippings.txt" to a format
 ;; useable in Org mode. The result will be sorted by book title and
 ;; displayed in a temporary buffer named "*clippings*".
 ;;
@@ -52,7 +50,7 @@
 ;;     M-x clip2org
 ;;
 ;;; Code
-(defgroup clip2org nil "clip2org group"
+(defgroup clip2org nil "Convert Kindle's My Clippings.txt into Org"
   :group 'org)
 
 (defcustom clip2org-clippings-file
