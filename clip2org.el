@@ -4,7 +4,7 @@
 ;; Version: 1.1
 ;; Time-stamp: <2012-05-28 10:53:45 thamer>
 ;; URL: https://github.com/thamer/clip2org
-;; Keywords: Kindle, Org mode, Amazon, My Clippings.txt
+;; Keywords: outlines
 ;; Compatibility: Tested on GNU Emacs 23.4 and 24.1
 ;; Copyright (C) 2012 Thamer Mahmoud, all rights reserved.
 
@@ -26,6 +26,8 @@
 ;; Floor, Boston, MA 02110-1301, USA.
 
 ;;; Commentary:
+;;
+;; (Kindle, Org mode, Amazon, My Clippings.txt)
 ;;
 ;; This package converts Kindle's "My Clippings.txt" to a format
 ;; useable in Org mode. The result will be sorted by book title and
